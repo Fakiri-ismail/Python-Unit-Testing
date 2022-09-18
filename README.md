@@ -14,7 +14,7 @@
 
 ## Test execution
 - unittest
-    1. Add the main() function than execute the file with the command  ``` $$ python demo/test_program_unittest.py [-v] ```
+    1. Add the main() function than execute the file  ``` $$ python demo/test_program_unittest.py [-v] ```
     2. Execute the file with the command ``` $$ python -m unittest demo/test_program_unittest.py [-v] ```
 
 - doctest
