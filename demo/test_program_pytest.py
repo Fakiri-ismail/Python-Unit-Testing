@@ -19,6 +19,7 @@ def test_add_None():
         add(None, None)
 
 # Fail Test
+@pytest.mark.skip(reason="Failed Test") # To skip failed test
 def test_get_data():
     if not get_data(None):
         pytest.fail("No Data")
@@ -35,3 +36,16 @@ def test_deposit(account):
 def test_withdraw(account):
     account.withdraw(500)
     assert account.balance == 500
+
+# Parametrize (running the same test with different values)
+@pytest.mark.parametrize("number", [1, 2, 5, 7])
+def test_positive_number(number):
+    assert number > 0
+
+# Use fixture as parametrize
+@pytest.fixture(params=[1, 2, 3, 4])
+def number_1(request):
+    return request.param
+
+def test_positive_number_param(number_1):
+    assert number_1 > 0
