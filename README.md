@@ -8,19 +8,19 @@
 - [VS Code configuration](https://code.visualstudio.com/docs/python/testing)
 
 ## Unit test library
-- unittest
-- doctest
-- pytest
+- **unittest**
+- **doctest**
+- **pytest**
 
 ## Test execution
-- unittest
+- **unittest**
     1. Add the main() function than execute the file  ``` $$ python demo/test_program_unittest.py [-v] ```
     2. Execute the file with the command ``` $$ python -m unittest demo/test_program_unittest.py [-v] ```
 
-- doctest
+- **doctest**
     1. Execute the file with the command ``` $$ python demo/doctest_example.py [-v] ```
 
-- pytest
+- **pytest**
     1. Execute the file with the command ``` $$ pytest demo/test_program_pytest.py [-v] ```
 
 ## Coverege Test
