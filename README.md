@@ -28,7 +28,7 @@
 - Execute ``` $$ coverage run -m unittest demo/test_program_unittest.py [-v] ```
 - Create an HTML page of the coverage with the command ``` $$ coverage html ```
 
-## Pytest HTML Rapport
+## Pytest HTML Report
 - Install coverage ``` $$ pipenv install pytest-html ```
 - Execute ``` $$ pytest demo/test_program_pytest.py [-v] --html=path/file.html ```
 
